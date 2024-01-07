@@ -2,37 +2,69 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+  width: 200px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.today {
+  background-color: lightblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.headline {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.final-id {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.final-id p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.headline {
+  text-align: center;
+}
+
+.available-slots {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.card.selected {
+  background-color: blue;
+}
+
+.card.selected h3 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card.time-slot.selected {
+  background-color: blue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card.time-slot.selected h3 {
+  color: white;
 }
